@@ -5,7 +5,7 @@
 
 Name: shivavg
 Version: 0.2.1
-Release: 1
+Release: 2
 Source0: http://garr.dl.sourceforge.net/project/shivavg/ShivaVG/%{version}/ShivaVG-%{version}.zip
 Patch0: ShivaVG-0.2.1-compile.patch
 Summary: An implementation of the OpenVG vector graphics API
@@ -50,9 +50,15 @@ chmod +x autogen.sh ; ./autogen.sh
 %install
 %makeinstall_std
 
+# Since there seems to be some disagreement about
+# %{_includedir}/vg vs. %{_includedir}/VG in the standard,
+# let's support both...
+ln -s vg %{buildroot}%{_includedir}/VG
+
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
 
 %files -n %{devname}
 %{_includedir}/vg
+%{_includedir}/VG
 %{_libdir}/*.so
