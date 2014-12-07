@@ -12,16 +12,20 @@ Summary: An implementation of the OpenVG vector graphics API
 URL: http://shivavg.sf.net/
 License: LGPLv2.1
 Group: System/Libraries
+BuildRequires: pkgconfig(gl)
+BuildRequires: pkgconfig(glu)
+BuildRequires: pkgconfig(glut)
+BuildRequires: jpeg-devel
 
 %description
-An implementation of the OpenVG vector graphics API
+An implementation of the OpenVG vector graphics API on top of OpenGL
 
 %package -n %{libname}
 Summary: An implementation of the OpenVG vector graphics API
 Group: System/Libraries
 
 %description -n %{libname}
-An implementation of the OpenVG vector graphics API
+An implementation of the OpenVG vector graphics API on top of OpenGL
 
 %package -n %{devname}
 Summary: Development files for %{name}
