@@ -1,0 +1,10 @@
+--- ShivaVG-0.2.1/src/shDefs.h.omv~	2014-12-07 22:20:00.636337009 +0100
++++ ShivaVG-0.2.1/src/shDefs.h	2014-12-07 22:20:27.812997254 +0100
+@@ -164,7 +164,6 @@ SHfloat getMaxFloat();
+ #  include <GL/gl.h>
+ #  include <GL/glu.h>
+ #else
+-#  define GL_GLEXT_LEGACY /* don't include glext.h */
+ #  include <GL/gl.h>
+ #  include <GL/glu.h>
+ #  include <GL/glx.h>
