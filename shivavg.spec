@@ -5,9 +5,10 @@
 
 Name: shivavg
 Version: 0.2.1
-Release: 2
+Release: 3
 Source0: http://garr.dl.sourceforge.net/project/shivavg/ShivaVG/%{version}/ShivaVG-%{version}.zip
 Patch0: ShivaVG-0.2.1-compile.patch
+Patch1: ShivaVG-0.2.1-GL-linkage.patch
 Summary: An implementation of the OpenVG vector graphics API
 URL: http://shivavg.sf.net/
 License: LGPLv2.1
