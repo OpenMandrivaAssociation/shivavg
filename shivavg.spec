@@ -40,7 +40,7 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %setup -qn ShivaVG-%{version}
-%apply_patches
+%autopatch -p1
 chmod +x autogen.sh ; ./autogen.sh
 
 %configure
