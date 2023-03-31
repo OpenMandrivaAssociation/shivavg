@@ -8,7 +8,7 @@
 Summary: An implementation of the OpenVG vector graphics API
 Name: shivavg
 Version: 0.2.1
-Release: 7
+Release: 8
 License: LGPLv2.1
 Group: System/Libraries
 URL: http://shivavg.sf.net/
