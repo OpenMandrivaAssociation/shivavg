@@ -11,7 +11,7 @@ Version: 0.2.1
 Release: 8
 License: LGPLv2.1
 Group: System/Libraries
-URL: http://shivavg.sf.net/
+URL: https://shivavg.sf.net/
 Source0: http://garr.dl.sourceforge.net/project/shivavg/ShivaVG/%{version}/ShivaVG-%{version}.zip
 Patch0: ShivaVG-0.2.1-compile.patch
 Patch1: ShivaVG-0.2.1-GL-linkage.patch
